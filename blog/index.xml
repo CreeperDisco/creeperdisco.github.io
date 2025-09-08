@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Creeper</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blog on Creeper</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <lastBuildDate>Fri, 05 Sep 2025 00:57:06 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github操作指南</title>
+      <link>http://localhost:1313/blog/github%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Fri, 05 Sep 2025 00:57:06 +0800</pubDate>
+      <guid>http://localhost:1313/blog/github%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</guid>
+      <description>本文将教会你，如何使用GitHub上传和同步代码及仓库代码管理</description>
+    </item>
+  </channel>
+</rss>

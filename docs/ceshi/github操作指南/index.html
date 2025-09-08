@@ -1,0 +1,782 @@
+<!doctype html>
+<html lang="zh-CN" data-bs-theme="auto">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/vendor/jost/jost-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<script 
+  src="/js/color-mode.f14b3e296de1d0b69e75af684b62a4a912a2cadab04e36123407cd8388204f1d.js"
+  integrity="sha256-8Us&#43;KW3h0Laeda9oS2KkqRKiytqwTjYSNAfNg4ggTx0=">
+</script>
+
+
+<link rel="stylesheet" href="/main.15da798195419cad92b30c874bd86f5dca71cf8e89c40793b391c872b9c178ccdc557275b1317d85b6c6e5be183731f04908f1a8b1a6df9a671d5070090c9046.css" integrity="sha512-Fdp5gZVBnK2SswyHS9hvXcpxz46JxAeTs5HIcrnBeMzcVXJ1sTF9hbbG5b4YNzHwSQjxqLGm35pnHVBwCQyQRg==" crossorigin="anonymous">
+
+<noscript><style>img.lazyload { display: none; }</style></noscript><base href="http://localhost:1313/docs/ceshi/github%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">
+
+  <link rel="canonical" href="http://localhost:1313/docs/ceshi/github%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">
+
+
+<title>Github操作指南  |  Creeper</title>
+<meta name="description" content="无">
+
+    
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    
+      <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    
+      <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+        sizes="180x180"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-192x192.png"
+        sizes="192x192"
+        type="image/png"
+      >
+      <link
+        rel="icon"
+        href="/favicon-512x512.png"
+        sizes="512x512"
+        type="image/png"
+      >
+<link rel="manifest" href="/manifest.webmanifest">
+
+<meta property="og:url" content="http://localhost:1313/docs/ceshi/github%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">
+  <meta property="og:site_name" content="Creeper">
+  <meta property="og:title" content="Github操作指南">
+  <meta property="og:description" content="无">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2025-09-05T00:57:06+08:00">
+    <meta property="article:modified_time" content="2025-09-05T00:57:06+08:00">
+    <meta property="og:image" content="http://localhost:1313/cover.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/cover.png">
+  <meta name="twitter:title" content="Github操作指南">
+  <meta name="twitter:description" content="无">
+      <meta name="twitter:site" content="@getdoks">
+
+    
+    
+    <script type="application/ld+json">
+  {
+   "@context": "https://schema.org",
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/",
+       "name": "Creeper的博客",
+       "position": 1
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/",
+       "name": "Docs",
+       "position": 2
+     },
+     {
+       "@type": "ListItem",
+       "item": "http://localhost:1313/docs/ceshi/",
+       "name": "文档",
+       "position": 3
+     },
+     {
+       "@type": "ListItem",
+       "name": "Github操作指南",
+       "position": 4
+     }
+   ]
+ }
+</script>
+
+
+
+
+ 
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true, theme: 'default' });
+</script>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+</head>
+
+  
+  <body class="single section docs" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -60%" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="sticky-top">
+<header class="navbar navbar-expand-lg">
+  <div class="container-lg">
+  
+    <a class="navbar-brand me-auto me-lg-3" href="/">Creeper</a>
+
+    
+    
+    <button type="button" id="searchToggleMobile" class="btn btn-link nav-link mx-2 d-lg-none" aria-label="Search website">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <circle cx="10" cy="10" r="7"></circle>
+        <line x1="21" y1="21" x2="15" y2="15"></line>
+      </svg>
+    </button>
+    
+    <button class="btn btn-link d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavSection" aria-controls="offcanvasNavSection" aria-label="Open section navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+        <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+      </svg>
+    </button>
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavSection" aria-labelledby="offcanvasNavSectionLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavSectionLabel">Docs</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="doks-sidebar mt-n3">
+          <nav id="doks-docs-nav" aria-label="Tertiary navigation">
+            
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>文档</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/ceshi/github%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">Github操作指南</a>
+  </li>
+
+  <li>
+      <a href="/docs/ceshi/git-%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">Git 详细安装教程</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+          </nav>
+        </aside>
+      </div>
+    </div>
+    
+    <button class="btn btn-link nav-link mx-2 order-3 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavMain" aria-controls="offcanvasNavMain" aria-label="Open main navigation menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <line x1="4" y1="8" x2="20" y2="8"></line>
+        <line x1="4" y1="16" x2="20" y2="16"></line>
+      </svg>
+    </button>
+
+    
+    <div class="offcanvas offcanvas-end h-auto" tabindex="-1" id="offcanvasNavMain" aria-labelledby="offcanvasNavMainLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavMainLabel">Creeper</h5>
+        <button type="button" class="btn btn-link nav-link p-0 ms-auto" data-bs-dismiss="offcanvas" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M18 6l-12 12"></path>
+            <path d="M6 6l12 12"></path>
+         </svg>
+        </button>
+      </div>
+      
+      <div class="offcanvas-body d-flex flex-column flex-lg-row justify-content-between">
+        <ul class="navbar-nav flex-grow-1"><li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/docs/">文档</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost:1313/blog/">博客</a>
+              </li>
+            </ul>
+
+        
+        
+        <button type="button" id="searchToggleDesktop" class="btn btn-link nav-link p-2 d-none d-lg-block" aria-label="Search website">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <circle cx="10" cy="10" r="7"></circle>
+            <line x1="21" y1="21" x2="15" y2="15"></line>
+          </svg>
+        </button>
+        
+        <div class="dropdown mt-1 order-lg-2">
+          <button class="btn btn-dropdown dropdown-toggle" id="doks-languages" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+            <span class="dropdown-caret">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 5h7"></path>
+                <path d="M9 3v2c0 4.418 -2.239 8 -5 8"></path>
+                <path d="M5 9c0 2.144 2.952 3.908 6.7 4"></path>
+                <path d="M12 20l4 -9l4 9"></path>
+                <path d="M19.1 18h-6.2"></path>
+              </svg>
+              <span id="doks-language-current">中文</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M6 9l6 6l6 -6"></path>
+              </svg>
+            </span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-lg-end me-lg-2 shadow rounded border-0" aria-labelledby="doks-languages">
+
+            <li><span class="dropdown-item current" aria-current="true">中文</span></li>
+
+            <li><hr class="dropdown-divider"></li>
+
+            
+              <li><a class="dropdown-item untranslated" rel="alternate" href="/en" hreflang="en" lang="en">English</a></li>
+            
+              
+          </ul>
+        </div>
+        
+        
+        <button id="buttonColorMode" class="btn btn-link mx-auto nav-link p-0 ms-lg-2 me-lg-1" type="button" aria-label="Toggle theme">
+          <svg data-bs-theme-value="dark" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"></path>
+          </svg>
+          <svg data-bs-theme-value="light" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0m-5 0h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
+          </svg>
+        </button>
+        
+        <ul id="socialMenu" class="nav mx-auto flex-row order-lg-4">
+          <li class="nav-item">
+              <a class="nav-link social-link" href="https://github.com/CreeperDisco"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg><small class="ms-2 visually-hidden">GitHub</small></a>
+            </li>
+          </ul>
+        
+        </div>
+    </div>
+
+    
+    </div>
+</header>
+</div>
+
+<div class="modal" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-fullscreen-md-down">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 visually-hidden" id="searchModalLabel">搜索</h1>
+        <button type="button" class="btn-close visually-hidden" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="search-input flex-grow-1 d-none">
+          <form id="search-form" class="search-form" action="#" method="post" accept-charset="UTF-8" role="search">
+            <label for="query" class="visually-hidden">搜索</label>
+            <div class="d-flex">
+              <input type="search" id="query" name="query" class="search-text form-control form-control-lg" placeholder="搜索" aria-label="搜索" maxlength="128" autocomplete="off">
+              <button type="button" class="btn btn-link text-decoration-none px-0 ms-3 d-md-none" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p class="search-loading status message d-none mt-3 text-center">正在加载搜索索引…</p>
+        <p class="search-no-recent message d-none mt-3 text-center">无最近搜索记录</p>
+        <p class="search-no-results message d-none mt-3 text-center">无搜索结果 for "<strong><span class="query-no-results">Query here</span></strong>"</p>
+        <div id="searchResults" class="search-results"></div>
+        <template>
+          <article class="search-result list-view">
+            <div class="card my-3">
+              <div class="card-body">
+                <header>
+                  <h2 class="h5 title title-submitted mb-0"><a class="stretched-link text-decoration-none text-reset" href="#">Title here</a></h2>
+                  <div class="submitted d-none"><time class="created-date">Date here</time></div>
+                </header>
+                <div class="content">Summary here</div>
+              </div>
+            </div>
+          </article>
+        </template>
+      </div>
+      <div class="modal-footer">
+        <ul class="list-inline me-auto d-none d-md-block">
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Enter key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M12 3.53088v3c0 1-1 2-2 2H4M7 11.53088l-3-3 3-3"></path></g></svg></kbd><span class="DocSearch-Label">to select</span></li>
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Arrow down" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 3.5v8M10.5 8.5l-3 3-3-3"></path></g></svg></kbd><kbd class="me-2"><svg width="15" height="15" aria-label="Arrow up" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M7.5 11.5v-8M10.5 6.5l-3-3-3 3"></path></g></svg></kbd><span class="DocSearch-Label">to navigate</span></li>
+          <li class="list-inline-item"><kbd class="me-2"><svg width="15" height="15" aria-label="Escape key" role="img"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"><path d="M13.6167 8.936c-.1065.3583-.6883.962-1.4875.962-.7993 0-1.653-.9165-1.653-2.1258v-.5678c0-1.2548.7896-2.1016 1.653-2.1016.8634 0 1.3601.4778 1.4875 1.0724M9 6c-.1352-.4735-.7506-.9219-1.46-.8972-.7092.0246-1.344.57-1.344 1.2166s.4198.8812 1.3445.9805C8.465 7.3992 8.968 7.9337 9 8.5c.032.5663-.454 1.398-1.4595 1.398C6.6593 9.898 6 9 5.963 8.4851m-1.4748.5368c-.2635.5941-.8099.876-1.5443.876s-1.7073-.6248-1.7073-2.204v-.4603c0-1.0416.721-2.131 1.7073-2.131.9864 0 1.6425 1.031 1.5443 2.2492h-2.956"></path></g></svg></kbd><span class="DocSearch-Label">to close</span></li>
+        </ul>
+        <p class="d-md-none">Search by <a class="text-decoration-none" href="https://github.com/nextapps-de/flexsearch">FlexSearch</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="wrap container-lg" role="document">
+      <div class="content">
+      
+        
+	<div class="row flex-xl-nowrap">
+		<div class="col-lg-5 col-xl-4 docs-sidebar d-none d-lg-block">
+			
+  
+    
+<nav class="section-nav docs-links">
+  <ul class="list-unstyled">
+
+  <li>
+    <details open>
+      <summary>文档</summary>
+      <ul class="list-unstyled list-nested">
+
+  <li class="active" >
+      <a aria-current="page" href="/docs/ceshi/github%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/">Github操作指南</a>
+  </li>
+
+  <li>
+      <a href="/docs/ceshi/git-%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">Git 详细安装教程</a>
+  </li>
+      </ul>
+    </details>
+  </li>
+  </ul>
+</nav>
+
+  
+
+		</div>
+		
+		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			<div class="page-links">
+  <h3>本页内容</h3>
+    <nav id="toc">
+  <ul>
+    <li><a href="#目录">目录</a></li>
+    <li><a href="#前期准备">前期准备</a>
+      <ul>
+        <li><a href="#1-github账号">1. GitHub账号</a></li>
+        <li><a href="#2-安装并配置git">2. 安装并配置Git</a></li>
+        <li><a href="#3-界面汉化设置">3. 界面汉化设置</a></li>
+      </ul>
+    </li>
+    <li><a href="#基础概念">基础概念</a>
+      <ul>
+        <li><a href="#1-什么是git和github">1. 什么是Git和GitHub</a></li>
+        <li><a href="#2-常用git术语">2. 常用Git术语</a></li>
+        <li><a href="#流程演示">流程演示</a></li>
+      </ul>
+    </li>
+    <li><a href="#fork和clone的区别">fork和clone的区别</a></li>
+    <li><a href="#代码上传步骤">代码上传步骤</a>
+      <ul>
+        <li><a href="#1-fork原始仓库">1. Fork原始仓库</a></li>
+        <li><a href="#2-初始化本地仓库">2. 初始化本地仓库</a></li>
+        <li><a href="#3-添加和提交文件">3. 添加和提交文件</a></li>
+      </ul>
+    </li>
+    <li><a href="#代码同步操作">代码同步操作</a>
+      <ul>
+        <li><a href="#1-拉取远程代码">1. 拉取远程代码</a></li>
+        <li><a href="#2-推送本地代码">2. 推送本地代码</a></li>
+        <li><a href="#3-解决冲突">3. 解决冲突</a></li>
+      </ul>
+    </li>
+    <li><a href="#仓库管理技巧">仓库管理技巧</a>
+      <ul>
+        <li><a href="#1-分支管理">1. 分支管理</a></li>
+        <li><a href="#2-版本回退">2. 版本回退</a></li>
+        <li><a href="#3-标签管理">3. 标签管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#常见问题与解决方案">常见问题与解决方案</a></li>
+    <li><a href="#参考资源">参考资源</a></li>
+  </ul>
+</nav>
+</div>
+
+		</nav>
+		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		
+			<h1>Github操作指南</h1>
+			
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				<details>
+    <summary>本页内容</summary>
+    <div class="page-links">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#目录">目录</a></li>
+    <li><a href="#前期准备">前期准备</a>
+      <ul>
+        <li><a href="#1-github账号">1. GitHub账号</a></li>
+        <li><a href="#2-安装并配置git">2. 安装并配置Git</a></li>
+        <li><a href="#3-界面汉化设置">3. 界面汉化设置</a></li>
+      </ul>
+    </li>
+    <li><a href="#基础概念">基础概念</a>
+      <ul>
+        <li><a href="#1-什么是git和github">1. 什么是Git和GitHub</a></li>
+        <li><a href="#2-常用git术语">2. 常用Git术语</a></li>
+        <li><a href="#流程演示">流程演示</a></li>
+      </ul>
+    </li>
+    <li><a href="#fork和clone的区别">fork和clone的区别</a></li>
+    <li><a href="#代码上传步骤">代码上传步骤</a>
+      <ul>
+        <li><a href="#1-fork原始仓库">1. Fork原始仓库</a></li>
+        <li><a href="#2-初始化本地仓库">2. 初始化本地仓库</a></li>
+        <li><a href="#3-添加和提交文件">3. 添加和提交文件</a></li>
+      </ul>
+    </li>
+    <li><a href="#代码同步操作">代码同步操作</a>
+      <ul>
+        <li><a href="#1-拉取远程代码">1. 拉取远程代码</a></li>
+        <li><a href="#2-推送本地代码">2. 推送本地代码</a></li>
+        <li><a href="#3-解决冲突">3. 解决冲突</a></li>
+      </ul>
+    </li>
+    <li><a href="#仓库管理技巧">仓库管理技巧</a>
+      <ul>
+        <li><a href="#1-分支管理">1. 分支管理</a></li>
+        <li><a href="#2-版本回退">2. 版本回退</a></li>
+        <li><a href="#3-标签管理">3. 标签管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#常见问题与解决方案">常见问题与解决方案</a></li>
+    <li><a href="#参考资源">参考资源</a></li>
+  </ul>
+</nav>
+    </div>
+  </details>
+
+			</nav>
+			<blockquote>
+<p>写在前面：
+本教程<span style="color:#000000; background-color:#000000;">需要视力和智力完好的人类</span></p></blockquote>
+<h2 id="目录">目录<a href="#目录" class="anchor" aria-hidden="true">#</a> </h2>
+<ul>
+<li><a href="#%e5%89%8d%e6%9c%9f%e5%87%86%e5%a4%87">前期准备</a></li>
+<li><a href="#%e5%9f%ba%e7%a1%80%e6%a6%82%e5%bf%b5">基础概念</a></li>
+<li><a href="#%e4%bb%a3%e7%a0%81%e4%b8%8a%e4%bc%a0%e6%ad%a5%e9%aa%a4">代码上传步骤</a></li>
+<li><a href="#%e4%bb%a3%e7%a0%81%e5%90%8c%e6%ad%a5%e6%93%8d%e4%bd%9c">代码同步操作</a></li>
+<li><a href="#%e4%bb%93%e5%ba%93%e7%ae%a1%e7%90%86%e6%8a%80%e5%b7%a7">仓库管理技巧</a></li>
+</ul>
+<h2 id="前期准备">前期准备<a href="#前期准备" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="1-github账号">1. GitHub账号<a href="#1-github账号" class="anchor" aria-hidden="true">#</a> </h3>
+<ul>
+<li>
+<p><strong>打不开的解决办法</strong>：</p>
+<ol>
+<li>挂梯子加速（最推荐，没有的话用下面的办法）</li>
+<li>使用 <a href="https://steampp.net/">watt tookit</a> 加速</li>
+<li>使用 <a href="https://www.ghxi.com/devsidecar.html">dev-sidecar</a> 加速</li>
+</ol>
+</li>
+<li>
+<p><strong>注册</strong>：这个我感觉不需要教学，直接注册即可</p>
+</li>
+</ul>
+<h3 id="2-安装并配置git">2. 安装并配置Git<a href="#2-安装并配置git" class="anchor" aria-hidden="true">#</a> </h3>
+<p><a href="../git-%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" target="_blank">打开安装指南</a></p>
+<!--<a data-fancybox="gallery" href="../开发人员模式.png">
+<img src="../开发人员模式.png" alt="alt text" title="GitHub">
+</a>
+
+
+<a class="fancybox" href="../开发人员模式.png"><img src="../开发人员模式.png" alt=""></a>-->
+<h3 id="3-界面汉化设置">3. 界面汉化设置<a href="#3-界面汉化设置" class="anchor" aria-hidden="true">#</a> </h3>
+<ul>
+<li>
+<p><strong>Github网页端汉化</strong>：</p>
+<ol>
+<li>打开浏览器(推荐 <code>Chrome/Edge/Firefox</code> 浏览器),点击<code>扩展——管理扩展</code>，找到如图开关</li>
+</ol>
+<p><a class="fancybox" href="../开发人员模式.png"><img src="../开发人员模式.png" alt="开发人员模式" width="40%"></a></p>
+<ol start="2">
+<li>然后安装篡改猴：<a href="https://microsoftedge.microsoft.com/addons/detail/iikmkjmpaadaobahmlepeloendndfphd" target="_blank">点击安装</a></li>
+<li>安装Github翻译脚本：<a href="https://www.tampermonkey.net/script_installation.php#url=https://github.com/maboloshi/github-chinese/raw/gh-pages/main.user.js" target="_blank">点击安装</a>，如果网页一直没反应，可以打开加速工具加速。
+如果还不行，就打开<a href="https://github.com/maboloshi/github-chinese/blob/gh-pages/main.user.js" target="_blank">脚本原始地址</a>，Ctrl+A复制全文，然后点击<code>扩展——篡改猴——添加新脚本</code>，全选后Ctrl+V粘贴，再点Ctrl+S保存</li>
+</ol>
+</li>
+<li>
+<p><strong>GitHub Desktop汉化</strong>：</p>
+<ol>
+<li>下载 <a href="https://central.github.com/deployments/desktop/desktop/latest/win32" target="_blank">GitHub Desktop</a> 官方版</li>
+<li>打开 <a href="https://github.com/robotze/GithubDesktopZhTool/releases/latest" target="_blank">GithubDesktopZhTool</a>，下载 <code>GithubDesktop.7z</code></li>
+<li>解压 <code>GithubDesktop.7z</code>，运行 <code>GithubDesktopZhTool.exe</code>，点击<code>汉化</code>，然后返回 GitHub Desktop 即可汉化成功</li>
+</ol>
+</li>
+</ul>
+<h2 id="基础概念">基础概念<a href="#基础概念" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="1-什么是git和github">1. 什么是Git和GitHub<a href="#1-什么是git和github" class="anchor" aria-hidden="true">#</a> </h3>
+<details>
+<summary><b>Github和Git的关系</b></summary>
+<h4 id="关于-github">关于 GitHub<a href="#关于-github" class="anchor" aria-hidden="true">#</a> </h4>
+<p>GitHub 是一种基于云的平台，可在其中存储、共享并与他人一起编写代码。</p>
+<p>通过将代码存储在 GitHub 上的“存储库”中，你可以：</p>
+<ul>
+<li>“展示或共享”你的工作。</li>
+<li>持续“跟踪和管理”对代码的更改。</li>
+<li>让其他人“审查”你的代码，并提出改进建议。</li>
+<li>在共享的项目中开展“协作”，无需担心这些更改会在准备好集成更改之前影响协作者的工作。</li>
+</ul>
+<p>协作式工作是 GitHub 最基本的功能之一，该功能由开源软件 Git 实现，而 GitHub 是以该软件为基础进行构建的。</p>
+<h4 id="关于-git">关于 Git<a href="#关于-git" class="anchor" aria-hidden="true">#</a> </h4>
+<p>Git 是一种可以智能追踪文件中的更改的版本控制系统。 在你和一组人员同时对同一文件进行更改时，Git 的价值就体现出来了。</p>
+<p>通常，要在基于 Git 的工作流中执行此操作，需要：</p>
+<ul>
+<li>为你（和协作者）正在处理的文件的主副本“创建分支”。</li>
+<li>在自己的个人分支上独立安全地对文件“进行编辑”。</li>
+<li>让 Git 智能地将特定更改“合并”回文件的主副本，从而确保更改不会影响其他人的更新。</li>
+<li>让 Git “跟踪”你和其他人的更改，这样就可以一直使用项目的最新版本。</li>
+</ul>
+<p>若要自行尝试使用 Git，请参阅 <a href="https://docs.github.com/zh/get-started/learning-to-code/getting-started-with-git">开始使用 Git</a>。</p>
+<h3 id="2-常用git术语">2. 常用Git术语<a href="#2-常用git术语" class="anchor" aria-hidden="true">#</a> </h3>
+<ul>
+<li>Repository（仓库）</li>
+<li>Commit（提交）</li>
+<li>Branch（分支）</li>
+<li>Pull/Push（拉取/推送）</li>
+<li>Merge（合并）</li>
+</ul>
+</details>
+<details>
+<summary><b>点击查看流程示意图</b></summary>
+<h3 id="流程演示">流程演示<a href="#流程演示" class="anchor" aria-hidden="true">#</a> </h3>
+<p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br></p>
+<div class="mermaid text-center">graph TD
+    A[开始] --> B[在GitHub打开原始仓库]
+    B --> C[Fork仓库到自己账户]
+    C --> D[使用GitHub Desktop选择分支]
+    D --> E[克隆Fork的仓库到本地]
+    E --> F[打开本地目录并复制代码文件]
+    F --> G[返回GitHub Desktop]
+    G --> H[点击同步按钮]
+    H --> I[提交更改Commit]
+    I --> J[再次同步推送到云端]
+    J --> K[从Fork的仓库发起PR到原仓库]
+    K --> L{审核是否通过?}
+    L -->|是| M[代码合并到原仓库对应分支]
+    L -->|否| N[需要修改或重新提交]
+    N --> F
+    M --> O[流程结束]
+</div>
+
+<h2 id="fork和clone的区别">fork和clone的区别<a href="#fork和clone的区别" class="anchor" aria-hidden="true">#</a> </h2>
+<div class="mermaid text-center">graph LR
+  A[原仓库] --fork--> B[fork的仓库]
+  B --clone--> C[本地]
+</div>
+
+<p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;<br></p>
+</details>
+<h2 id="代码上传步骤">代码上传步骤<a href="#代码上传步骤" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="1-fork原始仓库">1. Fork原始仓库<a href="#1-fork原始仓库" class="anchor" aria-hidden="true">#</a> </h3>
+<p>打开原始仓库，点击 <code>Fork</code> 按钮，将原始仓库的代码复制到你的账户下，并创建一个与原始仓库同名的仓库</p>
+<p><a class="fancybox" href="../Fork.png"><img src="../Fork.png" alt="复刻" width="50%"></a></p>
+<p>※ 记得去除<code>仅复制main分支</code>的<code>√</code></p>
+<p><a class="fancybox" href="../仅复制main分支.png"><img src="../仅复制main分支.png" alt="仅复制main分支" width="25%"></a></p>
+<h3 id="2-初始化本地仓库">2. 初始化本地仓库<a href="#2-初始化本地仓库" class="anchor" aria-hidden="true">#</a> </h3>
+<p>点击 <code>GitHub Desktop</code> 的<code>文件</code>菜单，选择 <code>克隆存储库</code>，</p>
+<p><a class="fancybox" href="../克隆存储库.png"><img src="../克隆存储库.png" alt="克隆存储库" width="30%"></a></p>
+<p>选择刚才Fork的仓库，并选择要保存到的位置，然后点击<code>克隆</code>。</p>
+<p><a class="fancybox" href="../克隆仓库.png"><img src="../克隆仓库.png" alt="克隆仓库" width="50%"></a></p>
+<p>此处选择<code>为了为父项目做贡献</code></p>
+<p><a class="fancybox" href="../你打算如何使用此fork.png"><img src="../你打算如何使用此fork.png" alt="你打算如何使用此fork" width="50%"></a></p>
+<h3 id="3-添加和提交文件">3. 添加和提交文件<a href="#3-添加和提交文件" class="anchor" aria-hidden="true">#</a> </h3>
+<p>首先你需要转到你刚刚克隆的<code>本地路径</code>，找不到的在Github Desktop中选择好仓库和分支，点击<code>在资源管理器中显示</code>，
+然后在你要上传代码的目录（例如<code>\Robot\Dart</code>），创建一个<code>.gitignore</code>文件，用记事本打开并添加以下内容：</p>
+<details>
+<summary><b>不知道gitignore是什么的，点开我查看</b></summary>
+<p>&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;<br></p>
+<p><strong>.gitignore</strong> 文件是 Git 版本控制系统中的一个重要组件，它允许开发者指定在项目提交过程中应该被 Git 忽略的文件或目录。这个文件通常位于 Git 仓库的根目录下，但也可以在仓库的任何子目录中创建多个 .gitignore 文件。</p>
+<p>.gitignore 文件的基本规则</p>
+<ul>
+<li>
+<p><strong>斜杠 <em>/</em> 开头</strong> 表示规则适用于根目录。</p>
+</li>
+<li>
+<p><strong>斜杠 <em>/</em> 结尾</strong> 表示忽略的是文件夹。</p>
+</li>
+<li>
+<p><strong>星号 <em>*</em></strong> 用作通配符，匹配任意数量的字符。</p>
+</li>
+<li>
+<p><strong>问号 <em>?</em></strong> 匹配单个字符。</p>
+</li>
+<li>
+<p><strong>方括号 <em>[]</em></strong> 匹配方括号内的任意字符。</p>
+</li>
+<li>
+<p><strong>感叹号 <em>!</em></strong> 用于否定模式，即不忽略匹配的文件。</p>
+</li>
+<li>
+<p><strong>井号 <em>#</em></strong> 用于添加注释。</p>
+</li>
+</ul>
+<p>例如，要忽略根目录下的 <em>bin</em> 文件夹，可以在 .gitignore 文件中添加以下规则：</p>
+<p>/bin/</p>
+<p>而要忽略所有 <em>.log</em> 文件，无论它们位于哪个目录下，可以使用：</p>
+<p>*.log</p>
+<p>忽略文件夹但包含特定文件</p>
+<p>如果你想忽略一个文件夹中的大部分内容，但想保留特定的文件或子目录，你可以使用 <em>!</em> 来重新包含这些项目。例如，忽略 <em>bin</em> 文件夹但保留 <em>run.sh</em> 脚本：</p>
+<p>/bin/</p>
+<p>!/bin/run.sh
+&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&ndash;<br></p>
+</details>
+
+
+
+<div class="expressive-code">
+  <figure class="frame not-content">
+  <figcaption class="header">
+    <span class="title"></span>
+  </figcaption>
+  <pre tabindex="0"><code class="language-gitignore" data-lang="gitignore"># ===============================
+# IDE / 编辑器配置
+# ===============================
+.idea/
+*.code-workspace
+
+# ===============================
+# 构建输出
+# ===============================
+cmake-build-debug/
+build/
+*.uvguix.*
+*.uvoptx
+*.bak
+*.axf
+*.lst
+*.o
+*.d
+
+# ===============================
+# 临时文件
+# ===============================
+*.log
+*.tmp
+.clangd</code></pre>
+  </figure>
+</div>
+<h5 id="然后你就可以放心把代码扔进目录了不会这个也要我教吧-">然后你就可以放心把代码扔进目录了，<span style="color:#000000; background-color:#000000;">不会这个也要我教吧</span> 。<a href="#然后你就可以放心把代码扔进目录了不会这个也要我教吧-" class="anchor" aria-hidden="true">#</a> </h5>
+<h2 id="代码同步操作">代码同步操作<a href="#代码同步操作" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="1-拉取远程代码">1. 拉取远程代码<a href="#1-拉取远程代码" class="anchor" aria-hidden="true">#</a> </h3>
+<p>打开VsCode，点击<code>源代码管理</code>，下面那个<code>克隆仓库</code>按钮相当于刚才的<a href="#2-%e5%88%9d%e5%a7%8b%e5%8c%96%e6%9c%ac%e5%9c%b0%e4%bb%93%e5%ba%93">初始化本地仓库</a>，</p>
+<p>所以我们点击上面那个<code>打开文件夹</code>，选择刚才你克隆到的目录，然后点<code>选择文件夹</code>确认</p>
+<p><a class="fancybox" href="../源代码管理前.png"><img src="../源代码管理前.png" alt="源代码管理前" width="50%"></a></p>
+<p>剩下的以后再写。。。</p>
+<h3 id="2-推送本地代码">2. 推送本地代码<a href="#2-推送本地代码" class="anchor" aria-hidden="true">#</a> </h3>
+<p>[添加push操作的说明和截图]</p>
+<h3 id="3-解决冲突">3. 解决冲突<a href="#3-解决冲突" class="anchor" aria-hidden="true">#</a> </h3>
+<p>[添加解决冲突的常见情况和处理方法]</p>
+<h2 id="仓库管理技巧">仓库管理技巧<a href="#仓库管理技巧" class="anchor" aria-hidden="true">#</a> </h2>
+<h3 id="1-分支管理">1. 分支管理<a href="#1-分支管理" class="anchor" aria-hidden="true">#</a> </h3>
+<p>[添加分支创建、切换、合并的操作说明]</p>
+<h3 id="2-版本回退">2. 版本回退<a href="#2-版本回退" class="anchor" aria-hidden="true">#</a> </h3>
+<p>[添加版本回退的操作说明]</p>
+<h3 id="3-标签管理">3. 标签管理<a href="#3-标签管理" class="anchor" aria-hidden="true">#</a> </h3>
+<p>[添加标签的使用说明]</p>
+<h2 id="常见问题与解决方案">常见问题与解决方案<a href="#常见问题与解决方案" class="anchor" aria-hidden="true">#</a> </h2>
+<p>[列出使用过程中常见的问题和解决方法]</p>
+<h2 id="参考资源">参考资源<a href="#参考资源" class="anchor" aria-hidden="true">#</a> </h2>
+<ul>
+<li><a href="">Git官方文档</a></li>
+<li><a href="">GitHub帮助文档</a></li>
+<li>[其他有用的参考资源]</li>
+</ul>
+
+			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
+				</div>
+			<div class="page-nav d-flex flex-column flex-sm-row">
+	
+	<div class="card text-end w-100">
+			<div class="card-body d-flex justify-content-end">
+				<div class="d-flex flex-column">
+					<div class="text-body-secondary">下一页</div>
+					<a href="/docs/ceshi/git-%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" class="stretched-link text-reset text-decoration-none">Git 详细安装教程</a>
+				</div>
+				<div class="d-flex flex-column justify-content-center">
+					<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+						<path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+						<path d="M5 12l14 0"></path>
+						<path d="M13 18l6 -6"></path>
+						<path d="M13 6l6 6"></path>
+					</svg>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			
+		</main>
+		
+	</div>
+
+      
+      </div>
+    </div>
+    
+    
+    <footer class="footer text-muted">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-lg-8 text-center text-lg-start">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a class="text-muted" href="/privacy/">隐私政策</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline">
+          <li class="list-inline-item">技术提供：<a class='text-muted' href='https://thulite.io/'>Thulite</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script async
+  src="/js/app.420ee721978d55263daaa2241230d80cc4438702ed8c1d2d8f9f5fafca6721ee.js"
+  integrity="sha256-Qg7nIZeNVSY9qqIkEjDYDMRDhwLtjB0tj59fr8pnIe4=">
+</script>
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script async
+  src="/js/flexsearch.b69084b9eb750f895cc333a6c35a176881d2f28b0c136fd78859f2cfd94cffde.js"
+  integrity="sha256-tpCEuet1D4lcwzOmw1oXaIHS8osME2/XiFnyz9lM/94=">
+</script>
+<script async
+  src="/js/search-modal.528eaefc659b474d1169fee994a193a6392817acb93034b4f28c55350b697e28.js"
+  integrity="sha256-Uo6u/GWbR00Raf7plKGTpjkoF6y5MDS08oxVNQtpfig=">
+</script>
+
+    
+  </body>
+</html>

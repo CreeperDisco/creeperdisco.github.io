@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文档 on Creeper</title>
+    <link>http://localhost:1313/docs/ceshi/</link>
+    <description>Recent content in 文档 on Creeper</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>Copyright (c) 2020-2024 Thulite</copyright>
+    <lastBuildDate>Fri, 05 Sep 2025 00:57:06 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/docs/ceshi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github操作指南</title>
+      <link>http://localhost:1313/docs/ceshi/github%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Fri, 05 Sep 2025 00:57:06 +0800</pubDate>
+      <guid>http://localhost:1313/docs/ceshi/github%E6%93%8D%E4%BD%9C%E6%8C%87%E5%8D%97/</guid>
+      <description>本文将教会你，如何使用GitHub上传和同步代码及仓库代码管理</description>
+    </item>
+    <item>
+      <title>Git 详细安装教程</title>
+      <link>http://localhost:1313/docs/ceshi/git-%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Fri, 05 Sep 2025 00:57:06 +0800</pubDate>
+      <guid>http://localhost:1313/docs/ceshi/git-%E8%AF%A6%E7%BB%86%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;p&gt;&lt;sub&gt;本文转载自&lt;a href=&#34;https://blog.csdn.net/mukes/article/details/115693833&#34;&gt;《Git 详细安装教程（详解 Git 安装过程的每一个步骤）》&lt;/a&gt;&lt;/sub&gt;&lt;/p&gt;&#xA;&lt;h4 id=&#34;目录&#34;&gt;目录&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#%e4%b8%80%e5%89%8d%e8%a8%80&#34;&gt;一、前言&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#%e4%ba%8cgit-%e7%9a%84%e5%ae%89%e8%a3%85&#34;&gt;二、Git 的安装&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#21-git-%e7%9a%84%e4%b8%8b%e8%bd%bd&#34;&gt;2.1 Git 的下载&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#22-git-%e7%9a%84%e5%ae%89%e8%a3%85&#34;&gt;2.2 Git 的安装&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#221-%e4%bd%bf%e7%94%a8%e8%ae%b8%e5%8f%af%e5%a3%b0%e6%98%8e&#34;&gt;2.2.1 使用许可声明&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#222-%e9%80%89%e6%8b%a9%e5%ae%89%e8%a3%85%e7%9b%ae%e5%bd%95&#34;&gt;2.2.2 选择安装目录&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#223-%e9%80%89%e6%8b%a9%e5%ae%89%e8%a3%85%e7%bb%84%e4%bb%b6&#34;&gt;2.2.3 选择安装组件&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#224-%e9%80%89%e6%8b%a9%e5%bc%80%e5%a7%8b%e8%8f%9c%e5%8d%95%e6%96%87%e4%bb%b6%e5%a4%b9&#34;&gt;2.2.4 选择开始菜单文件夹&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#225-%e9%80%89%e6%8b%a9-git-%e9%bb%98%e8%ae%a4%e7%bc%96%e8%be%91%e5%99%a8&#34;&gt;2.2.5 选择 Git 默认编辑器&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#226-%e5%86%b3%e5%ae%9a%e5%88%9d%e5%a7%8b%e5%8c%96%e6%96%b0%e9%a1%b9%e7%9b%ae%e4%bb%93%e5%ba%93%e7%9a%84%e4%b8%bb%e5%b9%b2%e5%90%8d%e5%ad%97&#34;&gt;2.2.6 决定初始化新项目(仓库)的主干名字&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#227-%e8%b0%83%e6%95%b4%e4%bd%a0%e7%9a%84-path-%e7%8e%af%e5%a2%83%e5%8f%98%e9%87%8f&#34;&gt;2.2.7 调整你的 path 环境变量&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#228-%e9%80%89%e6%8b%a9-ssh-%e6%89%a7%e8%a1%8c%e6%96%87%e4%bb%b6&#34;&gt;2.2.8 选择 SSH 执行文件&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#229-%e9%80%89%e6%8b%a9https%e5%90%8e%e7%ab%af%e4%bc%a0%e8%be%93&#34;&gt;2.2.9 选择HTTPS后端传输&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2210-%e9%85%8d%e7%bd%ae%e8%a1%8c%e5%b0%be%e7%ac%a6%e5%8f%b7%e8%bd%ac%e6%8d%a2&#34;&gt;2.2.10 配置行尾符号转换&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2211-%e9%85%8d%e7%bd%ae%e7%bb%88%e7%ab%af%e6%a8%a1%e6%8b%9f%e5%99%a8%e4%bb%a5%e4%b8%8e-git-bash-%e4%b8%80%e8%b5%b7%e4%bd%bf%e7%94%a8&#34;&gt;2.2.11 配置终端模拟器以与 Git Bash 一起使用&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2212-%e9%80%89%e6%8b%a9%e9%bb%98%e8%ae%a4%e7%9a%84-git-pull-%e8%a1%8c%e4%b8%ba&#34;&gt;2.2.12 选择默认的 &amp;ldquo;git pull&amp;rdquo; 行为&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2213-%e9%80%89%e6%8b%a9%e4%b8%80%e4%b8%aa%e5%87%ad%e8%af%81%e5%b8%ae%e5%8a%a9%e7%a8%8b%e5%ba%8f&#34;&gt;2.2.13 选择一个凭证帮助程序&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2214-%e9%85%8d%e7%bd%ae%e9%a2%9d%e5%a4%96%e7%9a%84%e9%80%89%e9%a1%b9&#34;&gt;2.2.14 配置额外的选项&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#2215-%e9%85%8d%e7%bd%ae%e5%ae%9e%e9%aa%8c%e6%80%a7%e9%80%89%e9%a1%b9&#34;&gt;2.2.15 配置实验性选项&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#23-git-%e7%9a%84%e5%8a%9f%e8%83%bd%e4%bb%8b%e7%bb%8d&#34;&gt;2.3 Git 的功能介绍&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#231-git-bash&#34;&gt;2.3.1 Git Bash&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#232-git-cmd&#34;&gt;2.3.2 Git CMD&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#233-git-faqs&#34;&gt;2.3.3 Git FAQs&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#234-git-gui&#34;&gt;2.3.4 Git GUI&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#235-git-release-note&#34;&gt;2.3.5 Git Release Note&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#%e4%b8%89git-%e4%bc%98%e7%a7%80%e6%95%99%e7%a8%8b%e6%8e%a8%e8%8d%90&#34;&gt;三、Git 优秀教程推荐&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;一前言&#34;&gt;一、前言&lt;/h3&gt;&#xA;&lt;p&gt;最近新买了一台 LG Gram，电脑空荡荡的，啥都得重头装，记录一下 Git 的安装过程，温习温习。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
